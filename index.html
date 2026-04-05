@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,11 +15,12 @@
   </head>
   <body>
     <div class="flash-sale">Flash sale upto 20% off.</div>
+
     <header>
       <div class="container">
         <div class="header-items">
           <div class="logo">
-            <img src="assets/images/logo.jpg" alt="FashionWear Logo" />
+            <a href="#"><img src="assets/images/logo.jpg" alt="FashionWear Logo" /></a>
             <h1>FashionWear</h1>
           </div>
           <nav>
@@ -29,10 +30,18 @@
             <a href="#best-seller">Offers</a>
             <a href="#contact">Contact</a>
           </nav>
-          <button class="cart">
+          <button class="cart" popovertarget="cart">
             🛒
             <span>10</span>
           </button>
+
+          <div id="cart" popover="auto" class="cart-items">
+            <ul>
+              <li>Shoes</li>
+              <li>Jacket</li>
+              <li>Hoddie</li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -226,7 +235,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28268.7770579726!2d85.25316431585996!3d27.667933485724568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1812d78377ef%3A0x8c37cded908543b!2sKirtipur%2044600!5e0!3m2!1sen!2snp!4v1775408877641!5m2!1sen!2snp"
             width="100%"
             height="450"
-            style="border: 0; border-radius: 2.5rem"
+            style="border: 0; border-radius: 2rem"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
