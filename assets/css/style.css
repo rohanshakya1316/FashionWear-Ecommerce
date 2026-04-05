@@ -447,6 +447,63 @@ section {
   outline: 2px solid var(--primary-color);
 }
 
+/* Dialog from Call To Action Section Styles */
+#signupForm {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.signup-form {
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: center;
+  left: 0;
+  padding: 2rem 3rem;
+  position: fixed;
+  top: 45%;
+  width: 100%;
+}
+
+.signup-form form {
+  margin-top: 1.5rem;
+}
+
+.signup-form input {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(252, 66, 1, 0.2);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.signup-form form button {
+  width: 100%;
+  background-color: var(--primary-color);
+  border: 1px solid rgb(252, 66, 1, 0.2);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.signup-form form button:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.signup-form .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--background);
+}
+
+
 /* Responsive Design Styles */
 @media (min-width: 512px) {
   .benefits-box {
@@ -463,6 +520,11 @@ section {
   
   .best-seller-box .content h2 {
     font-size: 2rem;
+  }
+
+  .signup-form {
+    left: 25%;
+    width: 50%;
   }
 }
 
@@ -521,5 +583,10 @@ section {
 
   .featured-box {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .signup-form {
+    left: 35%;
+    width: 30%;
   }
 }
