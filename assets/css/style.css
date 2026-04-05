@@ -31,10 +31,14 @@ body {
   background-color: var(--background);
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 120rem;
   margin: auto;
-  padding-inline: 1.6rem;
+  padding-inline: 2rem;
 }
 
 footer {
@@ -44,7 +48,7 @@ footer {
   text-align: center;
   padding-inline: 1rem;
   padding-block: 1rem;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 header {
@@ -93,7 +97,7 @@ nav a:hover {
 }
 
 .logo h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   background: linear-gradient(
     to right,
     var(--primary-color),
@@ -105,7 +109,7 @@ nav a:hover {
 }
 
 .logo img {
-  height: 3.2rem;  
+  height: 3.2rem;
 }
 
 .cart {
@@ -125,13 +129,146 @@ nav a:hover {
 }
 
 section {
-  min-height: 80vh;
+  padding-block: 4rem;
 }
+
+/* Hero Section Styles */
+#hero {
+  background-color: var(--background);
+}
+.hero-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.hero-box img {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .badge {
+  background-color: rgb(19, 193, 254, 0.1);
+  color: var(--accent-color);
+  border-radius: 1.6rem;
+  font-size: 1.25rem;
+  padding-inline: 1.6rem;
+  padding-block: 0.5rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  margin-top: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.75rem;
+  color: var(--text-light);
+  padding-block: 1.6rem;
+}
+
+.hero-content .shop {
+  background-color: var(--primary-color);
+  border-radius: 1.6rem;
+  border: none;
+  color: white;
+  padding: 1.25rem 2.25rem;
+  transition: all 0.3s ease;
+}
+
+.hero-content .shop:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content .explore {
+  background-color: var(--background);
+  border: 2px solid var(--primary-color);
+  border-radius: 1.6rem;
+  padding: 1.25rem 2.25rem;
+  margin-inline: 1.6rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.hero-content .explore:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Why Choose Us Section Styles */
+#benefits {
+  background-color: rgb(238, 238, 238);
+}
+
+#benefits h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.benefits-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.benefits-box .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  background-color: rgb(231, 223, 223);
+  border-radius: 1.6rem;
+}
+
+.benefits-box .card i {
+  font-size: 3.5rem;
+}
+
+.benefits-box .card p {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 512px) {
+  .benefits-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   nav {
     display: flex;
     gap: 0.5rem;
   }
+
+  .hero-box {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .benefits-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-/* Hero Section */
+@media (min-width: 1200px) {
+  .hero-box {
+    gap: 6rem;
+  }
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+}
