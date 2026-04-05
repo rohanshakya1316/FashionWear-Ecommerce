@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --accent-color: #13c1fe;
+  --background: #faf9f9;
+  --primary-color: #fe5013;
+  --primary-dark: #fc4201;
+  --secondary-color: #fe8a61;
+  --text-dark: #1a1a1a;
+  --text-light: #4c4d4f;
+}
+
+html {
+  font-size: 62.5%; /* 10px = 62.5% */
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+  padding-inline: 1.6rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-top:1rem;
+}
+
+header {
+  padding-block: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.055);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flash-sale {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  padding: 0.25rem 0.5rem;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: transparent;
+  background-clip: text;
+  margin-top: 0.25rem;
+}
+
+.logo img {
+  height: 3.2rem;  
+}
+
+.cart {
+  padding: 0.25rem 1rem 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--background);
+  height: auto;
+}
+
+.cart span {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 1.5rem;
+}
+
+section {
+  min-height: 80vh;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+/* Hero Section */
